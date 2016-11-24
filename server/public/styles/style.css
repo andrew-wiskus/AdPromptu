@@ -1,16 +1,15 @@
-main {
-  width: 80%;
-  margin: 0 auto;
-}
-main * {
-  text-align: center;
+main{
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 12px;
 }
 
-header {
-  text-align: center;
-  font-size: 300%;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-form {
-
+.map{
+  width: 600px;
+  height: 600px;
 }

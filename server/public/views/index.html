@@ -2,31 +2,46 @@
 <html>
 
 <head>
+
+    <!-- Link Stylesheet -->
     <link rel="stylesheet" href="../styles/style.css" />
 
+    <!-- Import Firebase / Firebase Config -->
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script type="text/javascript" src="/scripts/firebaseConfig.js"></script>
 
+    <!-- Import underscore.js -->
     <script type="text/javascript" src="/vendors/underscore/underscore-min.js"></script>
+
+    <!-- Import Angular / AngularFire -->
     <script type="text/javascript" src="/vendors/angular.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="/vendors/angularfire.min.js"></script>
     <script src="../scripts/client.js"></script>
 
+    <!-- Import Factories -->
     <script type="text/javascript" src="/scripts/factories/authFactory.js"></script>
     <script type="text/javascript" src="/scripts/factories/userFactory.js"></script>
 
-    <script type="text/javascript" src="/scripts/controllers/navController.js"></script>
+    <!-- Import Controllers -->
+    <script type="text/javascript" src="/scripts/controllers/mapController.js"></script>
     <script type="text/javascript" src="/scripts/controllers/homeController.js"></script>
-    <script type="text/javascript" src="/scripts/controllers/loginController.js"></script>
-    <script type="text/javascript" src="/scripts/controllers/adminController.js"></script>
 
-    <title>GitHub Challenge</title>
+    <!--Import Map Dependancies (LeafletJS)-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="../vendors/leaflet-draw/leaflet.draw.js"></script>
+    <script src="../vendors/ui-leaflet.min.js"></script>
+    <script src="../vendors/ui-leaflet-draw.js"></script>
+    <script src="../vendors/angular-simple-logger.min.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="./vendor/leaflet-draw/leaflet.draw.css" />
+
+    <title>AdPromptu</title>
 </head>
 
 <body ng-app="myApp">
-  <div ng-include="'/views/nav.html'"></div>
-      <main ng-view></main>
+  <main ng-view></main>
 </body>
 
 </html>
